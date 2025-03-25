@@ -1,0 +1,8 @@
+* Codice sorgente: contiene il codice sorgente di entrambe le versioni del progetto;
+* Diagrammi UML: contiene i diagrammi UML di entrambe le versioni del progetto;
+* Documentazione: contiene un documento che spiega il funzionamento dell'applicazione, i suoi principi teorici, una guida all'installazione e esempi di funzionamento. Disponibile sia per il progetto base che per l'estensione;
+* File memorizzati: contiene i file in cui sono memorizzati i risultati delle operazioni;
+* Eseguibile: contiene i file .jar eseguibili dell'applicazione. Disponibile sia per il progetto base che per l'estensione;
+* Javadoc: contiene tutta la documentazione Javadoc del progetto.
+* JavaFX: contiene la libreria JavaFX utilizzata per l'estensione del progetto;
+* SQL Connector: contiene il connettore necessario per connettere il server al database mySQL e lo script per inizializzare il database.

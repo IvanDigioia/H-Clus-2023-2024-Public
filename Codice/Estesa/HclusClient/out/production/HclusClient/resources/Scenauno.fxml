@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="maininterface.ScenaUno">
+    <children>
+        <VBox alignment="TOP_CENTER" maxHeight="100.0" HBox.hgrow="ALWAYS" />
+        <VBox alignment="CENTER" HBox.hgrow="ALWAYS">
+            <children>
+                <HBox VBox.vgrow="ALWAYS" />
+                <AnchorPane maxHeight="382.0" maxWidth="573.0" minHeight="350.0" minWidth="450.0" prefHeight="382.0" prefWidth="573.0" style="-fx-background-color: white;">
+                    <children>
+                        <Text layoutX="14.0" layoutY="21.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Benvenuto/a" wrappingWidth="164.541015625">
+                            <font>
+                                <Font name="System Italic" size="18.0" />
+                            </font>
+                        </Text>
+                        <TextArea editable="false" layoutX="14.0" layoutY="43.0" prefHeight="189.0" prefWidth="557.0" text="Il software H-Clus è un'applicazione client/service per distribuire il calcolo del clustering. &#10;L'algoritmo si basa sulla distanza tra cluster per unire iterativamente i dati più vicini &#10;fino a creare una gerarchia, &#10;e organizzare i dati in una struttura ad albero chiamata dendrogramma.&#10;Per poter utilizzare l'applicazione è indispendabile avere un Server in ascolto che contenga i dati.&#10;&#10;Nella parte sottostante vi sarà chiesto di scegliere se: &#10;-Caricare dati dal database: salva su file i risultati ottenuti da una richiesta inoltrata al server.&#10;-Caricare dati da file: legge da un file presente nella cartella 'File memorizzati'." />
+                        <Text layoutX="14.0" layoutY="39.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Introduzione" />
+                        <Button fx:id="CaricaDati" layoutX="14.0" layoutY="293.0" mnemonicParsing="false" onAction="#AvviaScenaCaricaDati" text="Carica dati dal database" />
+                        <Button fx:id="CaricaFile" layoutX="14.0" layoutY="336.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#AvviaScenaCaricaFile" text="Carica dati da file" />
+                        <Button fx:id="Chiudi" layoutX="418.0" layoutY="336.0" mnemonicParsing="false" onAction="#Exit" stylesheets="@style.css" text="Chiudi applicazione" />
+                    </children>
+                </AnchorPane>
+                <HBox VBox.vgrow="ALWAYS" />
+            </children>
+        </VBox>
+        <VBox alignment="BASELINE_CENTER" maxHeight="100.0" HBox.hgrow="ALWAYS" />
+    </children>
+</HBox>

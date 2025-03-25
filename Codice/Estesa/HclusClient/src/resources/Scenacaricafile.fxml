@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="537.0" prefWidth="702.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="maininterface.ScenaCaricaFile">
+   <children>
+      <VBox alignment="TOP_CENTER" maxHeight="100.0" HBox.hgrow="ALWAYS" />
+      <VBox alignment="CENTER" prefHeight="537.0" prefWidth="697.0" HBox.hgrow="ALWAYS">
+         <children>
+            <HBox VBox.vgrow="ALWAYS" />
+            <AnchorPane maxHeight="513.0" maxWidth="654.0" minHeight="350.0" minWidth="450.0" prefHeight="513.0" prefWidth="654.0" style="-fx-background-color: white;">
+               <children>
+                  <Text layoutX="14.0" layoutY="33.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Carica dati da file" wrappingWidth="164.541015625">
+                     <font>
+                        <Font name="System Italic" size="18.0" />
+                     </font>
+                  </Text>
+                  <TextArea editable="false" layoutX="14.0" layoutY="59.0" prefHeight="128.0" prefWidth="629.0" text="Per poter caricare dei dati da un file compila il campo sottostante con il nome del file che vuoi trovare.&#10;Es. example3.dat&#10;Se hai problemi nel trovare il file premi il bottone 'Esplora cartella' per verificare che esso file sia presente.&#10;Se desideri tornare indietro premi il bottone 'Indietro'.&#10;Quando sei sicuro dei tuoi inserimenti premi il bottone 'Esegui' e nel pannello sottostante &#10;vedrai il contenuto del file che è stato trovato." />
+                  <Text layoutX="14.0" layoutY="50.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Istruzioni" />
+                  <TextField fx:id="NomeFile" layoutX="14.0" layoutY="198.0" promptText="Inserisci nome file" />
+                  <TextArea fx:id="risultati" editable="false" layoutX="215.0" layoutY="198.0" prefHeight="256.0" prefWidth="427.0" style="-fx-background-color: #3333;">
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                  </TextArea>
+                  <Button fx:id="Indietro" layoutX="15.0" layoutY="474.0" mnemonicParsing="false" onAction="#tornaScena" text="Indietro" />
+                  <Button fx:id="Esplora" layoutX="526.0" layoutY="474.0" mnemonicParsing="false" onAction="#esploraCartella" text="Esplora cartella" />
+                  <Button fx:id="Esegui" layoutX="20.0" layoutY="241.0" mnemonicParsing="false" onAction="#EseguiFile" text="Esegui" />
+                  <Button fx:id="Pulisci" layoutX="15.0" layoutY="438.0" mnemonicParsing="false" onAction="#pulisciPannello" stylesheets="@style.css" text="Pulisci pannello" />
+               </children>
+            </AnchorPane>
+            <HBox VBox.vgrow="ALWAYS" />
+         </children>
+      </VBox>
+      <VBox alignment="BASELINE_CENTER" maxHeight="100.0" HBox.hgrow="ALWAYS" />
+   </children>
+</HBox>

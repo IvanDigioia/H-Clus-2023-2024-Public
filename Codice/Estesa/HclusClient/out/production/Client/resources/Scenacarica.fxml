@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="501.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="maininterface.ScenaCarica">
+   <children>
+      <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="449.0" prefWidth="600.0" style="-fx-background-color: #F5F5F5;" VBox.vgrow="ALWAYS">
+         <children>
+            <Text layoutX="14.0" layoutY="33.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Carica dati" wrappingWidth="164.541015625">
+               <font>
+                  <Font name="System Italic" size="18.0" />
+               </font>
+            </Text>
+            <TextArea editable="false" layoutX="6.0" layoutY="57.0" prefHeight="157.0" prefWidth="583.0" text="Per poter caricare dei dati compila i campi sottostanti con la profondità e il tipo di distanza, &#10;(1) per il Single link distance e (2) per l'average link distance&#10;alla fine dell'esecuzione l'esito di questa operazione sarà salvato all'interno di un file, scegli il nome del file,&#10;ricorda di inserire l'estensione con cui salvare il file. (Esempio: tavola.dat, example3.dat, example4.dat)&#10;Se desideri tornare indietro premi il bottone 'Indietro'.&#10;Quando sei sicuro dei tuoi inserimenti premi il bottone 'Esegui' e nel pannello sottostante &#10;vedrai il risultato della tua operazione." />
+            <Text layoutX="14.0" layoutY="51.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Istruzioni" />
+            <TextField fx:id="Profondita" layoutX="16.0" layoutY="222.0" prefHeight="25.0" prefWidth="148.0" promptText="Inserisci profondità" />
+            <TextField fx:id="Nomefile" layoutX="16.0" layoutY="287.0" prefHeight="25.0" prefWidth="112.0" promptText="Inserisci nome file" />
+            <TextField fx:id="SA" layoutX="16.0" layoutY="255.0" prefHeight="25.0" prefWidth="112.0" promptText="Inerisci 1 / 2" />
+            <TextArea fx:id="risultati" editable="false" layoutX="182.0" layoutY="222.0" prefHeight="230.0" prefWidth="406.0" style="-fx-background-color: #3333;">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </TextArea>
+            <Button fx:id="Indietro" layoutX="15.0" layoutY="462.0" mnemonicParsing="false" onAction="#tornaScena" text="Indietro" />
+            <Button fx:id="EseguiSalva" layoutX="14.0" layoutY="328.0" mnemonicParsing="false" onAction="#Esegui" text="Esegui" />
+            <Button fx:id="Pulisci" layoutX="13.0" layoutY="365.0" mnemonicParsing="false" onAction="#pulisciPannello" text="Pulisci pannello" />
+         </children>
+      </AnchorPane>
+   </children>
+</VBox>

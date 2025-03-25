@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="537.0" prefWidth="702.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="maininterface.ScenaCarica">
+   <children>
+      <VBox alignment="TOP_CENTER" maxHeight="100.0" HBox.hgrow="ALWAYS" />
+      <VBox alignment="CENTER" prefHeight="537.0" prefWidth="697.0" HBox.hgrow="ALWAYS">
+         <children>
+            <HBox VBox.vgrow="ALWAYS" />
+            <AnchorPane maxHeight="513.0" maxWidth="654.0" minHeight="350.0" minWidth="450.0" prefHeight="513.0" prefWidth="654.0" style="-fx-background-color: white;">
+               <children>
+                  <Text layoutX="16.0" layoutY="26.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Carica dati" wrappingWidth="164.541015625">
+                     <font>
+                        <Font name="System Italic" size="18.0" />
+                     </font>
+                  </Text>
+                  <TextArea editable="false" layoutX="14.0" layoutY="55.0" prefHeight="157.0" prefWidth="626.0" text="Per poter caricare dei dati compila i campi sottostanti con la profondità e il tipo di distanza, &#10;(1) per il Single link distance e (2) per l'average link distance&#10;alla fine dell'esecuzione l'esito di questa operazione sarà salvato all'interno di un file, scegli il nome del file,&#10;ricorda di inserire l'estensione con cui salvare il file. (Esempio: tavola.dat, example3.dat, example4.dat)&#10;Se desideri tornare indietro premi il bottone 'Indietro'.&#10;Quando sei sicuro dei tuoi inserimenti premi il bottone 'Esegui' e nel pannello sottostante &#10;vedrai il risultato della tua operazione." />
+                  <Text layoutX="14.0" layoutY="45.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Istruzioni" />
+                  <TextField fx:id="Profondita" layoutX="16.0" layoutY="226.0" prefHeight="27.0" prefWidth="122.0" promptText="Inserisci profondità" />
+                  <TextField fx:id="Nomefile" layoutX="17.0" layoutY="289.0" prefHeight="27.0" prefWidth="144.0" promptText="Inserisci nome file" />
+                  <TextField fx:id="SA" layoutX="17.0" layoutY="257.0" prefHeight="27.0" prefWidth="122.0" promptText="Inerisci 1 / 2" />
+                  <TextArea fx:id="risultati" editable="false" layoutX="186.0" layoutY="229.0" prefHeight="278.0" prefWidth="454.0" style="-fx-background-color: #3333;">
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                  </TextArea>
+                  <Button fx:id="Indietro" layoutX="18.0" layoutY="465.0" mnemonicParsing="false" onAction="#tornaScena" text="Indietro" />
+                  <Button fx:id="EseguiSalva" layoutX="17.0" layoutY="324.0" mnemonicParsing="false" onAction="#Esegui" text="Esegui" />
+                  <Button fx:id="Pulisci" layoutX="19.0" layoutY="425.0" mnemonicParsing="false" onAction="#pulisciPannello" text="Pulisci pannello" />
+               </children>
+            </AnchorPane>
+            <HBox VBox.vgrow="ALWAYS" />
+         </children>
+      </VBox>
+      <VBox alignment="BASELINE_CENTER" maxHeight="100.0" HBox.hgrow="ALWAYS" />
+   </children>
+</HBox>

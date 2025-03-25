@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="501.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="maininterface.ScenaCaricaFile">
+   <children>
+      <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="449.0" prefWidth="600.0" style="-fx-background-color: #F5F5F5;" VBox.vgrow="ALWAYS">
+         <children>
+            <Text layoutX="15.0" layoutY="33.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Carica dati da file" wrappingWidth="164.541015625">
+               <font>
+                  <Font name="System Italic" size="18.0" />
+               </font>
+            </Text>
+            <TextArea editable="false" layoutX="6.0" layoutY="57.0" prefHeight="128.0" prefWidth="583.0" text="Per poter caricare dei dati da un file compila il campo sottostante con il nome del file che vuoi trovare.&#10;Es. example3.dat&#10;Se hai problemi nel trovare il file premi il bottone 'Esplora cartella' per verificare che esso file sia presente.&#10;Se desideri tornare indietro premi il bottone 'Indietro'.&#10;Quando sei sicuro dei tuoi inserimenti premi il bottone 'Esegui' e nel pannello sottostante &#10;vedrai il contenuto del file che è stato trovato." />
+            <Text layoutX="14.0" layoutY="51.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Istruzioni" />
+            <TextField fx:id="NomeFile" layoutX="15.0" layoutY="200.0" promptText="Inserisci nome file" />
+            <TextArea fx:id="risultati" editable="false" layoutX="179.0" layoutY="195.0" prefHeight="256.0" prefWidth="409.0" style="-fx-background-color: #3333;">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </TextArea>
+            <Button fx:id="Indietro" layoutX="15.0" layoutY="462.0" mnemonicParsing="false" onAction="#tornaScena" text="Indietro" />
+            <Button fx:id="Esplora" layoutX="473.0" layoutY="462.0" mnemonicParsing="false" onAction="#esploraCartella" text="Esplora cartella" />
+            <Button fx:id="Esegui" layoutX="14.0" layoutY="269.0" mnemonicParsing="false" onAction="#EseguiFile" text="Esegui" />
+            <Button fx:id="Pulisci" layoutX="14.0" layoutY="304.0" mnemonicParsing="false" onAction="#pulisciPannello" text="Pulisci pannello" />
+         </children>
+      </AnchorPane>
+   </children>
+</VBox>
